@@ -1,0 +1,117 @@
+	#Python Tutorial 
+	my_string = "Zakaria"
+	print len(my_string)
+	print my_string.upper()
+
+	#Tutoral 1 : Conditionals & Control Flow
+	def clinic():
+	    print "You've just entered the clinic!"
+	    print "Do you take the door on the left or the right?"
+	    answer = raw_input("Type left or right and hit 'Enter'.").lower()
+	    if answer == "left" or answer == "l":
+	        print "This is the Verbal Abuse Room, you heap of parrot droppings!"
+	    elif answer == "right" or answer == "r":
+	        print "Of course this is the Argument Room, I've told you that already!"
+	    else:
+	        print "You didn't pick left or right! Try again."
+	        clinic()
+
+	clinic()
+
+	#Truth Table 
+	"""
+	     Boolean Operators
+	------------------------      True and True is True
+	True and False is False
+	False and True is False
+	False and False is False
+
+	True or True is True
+	True or False is True
+	False or True is True
+	False or False is False
+
+	Not True is False
+	Not False is True
+
+	"""
+
+	#The Big If 
+	def the_flying_circus():
+	    if 9 + 10 == 21:    
+	        return False
+	    elif (3 < 4) and (5 >= 5):
+	        return True
+	    else:
+	        print 'Something is wrong!'
+
+	#Display time 
+	from datetime import datetime
+	now = datetime.now()
+
+	print '%s:%s:%s' % (now.hour, now.minute, now.second)
+
+	from datetime import datetime
+	now = datetime.now()
+
+	print '%s/%s/%s %s:%s:%s' % (now.day, now.month, now.year, now.hour, now.minute, now.second)
+
+	#Vérifier si l'utilisateur a saisi du texte : 
+	print 'Welcome to the Pig Latin Translator!'
+
+	original = raw_input("Enter a word:")
+
+	if len(original) > 0: 
+	    print original
+	else:
+	    print  "Come on, write something!"
+
+	print 'Welcome to the Pig Latin Translator!'
+
+	original = raw_input("Enter a word:")
+
+	if len(original) > 0 and original.isalpha(): 
+	    print original
+	else:
+	    print  "Come on, write something!"
+
+	pyg = 'ay'
+
+	original = raw_input('Enter a word:')
+
+	if len(original) > 0 and original.isalpha():
+	    print original
+	else:
+	    print 'empty'
+	   
+	word = original.lower()
+	first = word[0]
+
+	#Ending up : 
+	pyg = 'ay'
+
+original = raw_input('Enter a word:')
+word = original.lower()
+first = word[0]
+new_word = word + first + pyg
+new_word = new_word[1:]
+
+if len(original) > 0 and original.isalpha():
+    print new_word
+else:
+    print 'empty'
+
+    def power(base,exponent):  # Add your parameters here!
+    result = base**exponent
+    print "%d to the power of %d is %d." % (base, exponent, result)
+
+power(37,4)  # Add your arguments here!
+
+#Functions : 
+def one_good_turn(n):
+    return n + 1
+    
+def deserves_another(n):
+    return one_good_turn(n) + 2
+
+	 
